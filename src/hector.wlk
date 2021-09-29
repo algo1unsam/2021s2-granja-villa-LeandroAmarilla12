@@ -8,7 +8,7 @@ object hector {
 	var monedas = 0
 	
 	method sembrarMaiz(){
-		game.addVisual(new Maiz(position = position))
+		game.addVisual(new Maiz(position = position)
 	}
 	
 	method sembrarTrigo(){

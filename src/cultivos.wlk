@@ -24,7 +24,7 @@ class Maiz {
 class Trigo{
 	const property position
 	var nivel = 0
-	var estaListo = false
+	
 	
 	method image(){
 		return "wheat_" + nivel + ".png"
@@ -35,12 +35,9 @@ class Trigo{
 		if(nivel > 3){
 			nivel = 0
 		}
-		if(nivel >= 2){
-			estaListo = true
-		}
 	}
 	
-	method estaLista() = estaListo
+	method estaLista() = nivel >=2
 	
 	method valor(){
 		return (nivel - 1) * 100
