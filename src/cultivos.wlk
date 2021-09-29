@@ -55,7 +55,7 @@ class Tomaco{
 	}
 	
 	method regar(){
-		if(self.position().x() < 9){
+		if(self.position().y() < game.height() - 1){
 			position = self.position().up(1)
 		}
 	}
